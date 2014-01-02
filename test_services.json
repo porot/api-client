@@ -1,0 +1,13 @@
+{
+    "includes": ["_porot"],
+    "services": {
+        "default_settings": {
+            "params": {
+                "token": "foo"
+            }
+        },
+        "career_advice": {
+            "extends": "default_settings"
+        }
+    }
+}

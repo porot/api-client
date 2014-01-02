@@ -2,7 +2,6 @@
 
 namespace Porot\Common;
 
-use Porot\Common\Facade\Facade;
 use Guzzle\Service\Builder\ServiceBuilder;
 use Guzzle\Service\Builder\ServiceBuilderLoader;
 
@@ -44,8 +43,7 @@ class Porot extends ServiceBuilder
         }
 
         $loader = new ServiceBuilderLoader();
-        $loader->addAlias('_aws', self::getDefaultServiceDefinition())
-            ->addAlias('_sdk1', __DIR__  . '/Resources/sdk1-config.php');
+        $loader->addAlias('_porot', self::getDefaultServiceDefinition());
 
         return $loader->load($config, $globalParameters);
     }
@@ -57,7 +55,7 @@ class Porot extends ServiceBuilder
      */
     public static function getDefaultServiceDefinition()
     {
-        return __DIR__  . '/Resources/aws-config.php';
+        return __DIR__  . '/Resources/porot-config.php';
     }
 
     /**
@@ -68,19 +66,5 @@ class Porot extends ServiceBuilder
     public function getConfig()
     {
         return $this->builderConfig;
-    }
-
-    /**
-     * Enables the facades for the clients defined in the service builder
-     *
-     * @param string|null $namespace The namespace that the facades should be mounted to. Defaults to global namespace
-     *
-     * @return Aws
-     */
-    public function enableFacades($namespace = null)
-    {
-        Facade::mountFacades($this, $namespace);
-
-        return $this;
     }
 }

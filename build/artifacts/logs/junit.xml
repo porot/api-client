@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="tests/" tests="4" assertions="5" failures="0" errors="0" time="0.016783">
+    <testsuite name="Porot\Tests\CareerAdvice\CareerAdviceClientTest" file="/projects/porot/api-client/tests/Porot/Tests/CareerAdvice/CareerAdviceClientTest.php" namespace="Porot\Tests\CareerAdvice" fullPackage="Porot.Tests.CareerAdvice" tests="1" assertions="1" failures="0" errors="0" time="0.011534">
+      <testcase name="testFactoryInitializesClient" class="Porot\Tests\CareerAdvice\CareerAdviceClientTest" file="/projects/porot/api-client/tests/Porot/Tests/CareerAdvice/CareerAdviceClientTest.php" line="17" assertions="1" time="0.011534"/>
+    </testsuite>
+    <testsuite name="Porot\Tests\Common\PorotTest" file="/projects/porot/api-client/tests/Porot/Tests/Common/PorotTest.php" namespace="Porot\Tests\Common" fullPackage="Porot.Tests.Common" tests="3" assertions="4" failures="0" errors="0" time="0.005249">
+      <testcase name="testFactoryInstantiatesAwsObjectUsingDefaultConfig" class="Porot\Tests\Common\PorotTest" file="/projects/porot/api-client/tests/Porot/Tests/Common/PorotTest.php" line="17" assertions="2" time="0.001684"/>
+      <testcase name="testTreatsArrayInFirstArgAsGlobalParametersUsingDefaultConfigFile" class="Porot\Tests\Common\PorotTest" file="/projects/porot/api-client/tests/Porot/Tests/Common/PorotTest.php" line="24" assertions="1" time="0.002091"/>
+      <testcase name="testReturnsDefaultConfigPath" class="Porot\Tests\Common\PorotTest" file="/projects/porot/api-client/tests/Porot/Tests/Common/PorotTest.php" line="33" assertions="1" time="0.001474"/>
+    </testsuite>
+  </testsuite>
+</testsuites>
