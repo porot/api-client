@@ -7,7 +7,7 @@ use Guzzle\Service\Client;
 
 class AbstractClient extends Client
 {
-	public static function factory($config = array())
+    public static function factory($config = array())
     {
         // Provide a hash of default client configuration options
         $default = array('base_url' => 'http://api.porot.com');
@@ -27,4 +27,3 @@ class AbstractClient extends Client
         return $client;
     }
 }
-
