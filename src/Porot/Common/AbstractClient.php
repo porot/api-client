@@ -21,7 +21,7 @@ class AbstractClient extends Client
         // Merge in default settings and validate the config
         $config = Collection::fromConfig($config, $default, $required);
 
-        // Create a new Twitter client
+        // Create a new client
         $client = new self($config->get('base_url'), $config);
 
         return $client;
