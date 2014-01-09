@@ -1,12 +1,12 @@
 {
     "name": "CareerAdvice",
     "apiVersion": "2014-01-08",
-    "baseUrl": "http://api.porot.org/app_dev.php/career/advice",
+    "baseUrl": "",
     "description": "Career advice service",
     "operations": {
         "GetTopics": {
             "httpMethod": "GET",
-            "uri": "/topics",
+            "uri": "app_dev.php/career/advice/topics",
             "summary": "Gets a JSON list of career advice topics",
             "responseClass": "GetTopicsOutput",
             "parameters": {
