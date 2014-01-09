@@ -6,7 +6,7 @@
     "operations": {
         "GetTopics": {
             "httpMethod": "GET",
-            "uri": "app_dev.php/career/advice/topics",
+            "uri": "career/advice/topics",
             "summary": "Gets a JSON list of career advice topics",
             "responseClass": "GetTopicsOutput",
             "parameters": {
