@@ -4,6 +4,7 @@ namespace Porot\Api;
 
 use Guzzle\Common\Collection;
 use Guzzle\Service\Client;
+use Guzzle\Service\Description\ServiceDescription;
 
 class AbstractClient extends Client
 {
@@ -24,6 +25,18 @@ class AbstractClient extends Client
         // Create a new client
         $client = new static($config->get('base_url'), $config);
 
+        $client->setDescription(ServiceDescription::factory(__DIR__  . '/Resources/' . static::SERVICE_DESCRIPTION));
+
         return $client;
+    }
+
+    public function getBaseUrl($expand = true)
+    {
+        return parent::getBaseUrl($expand) . $this->getPath();
+    }
+
+    public function getPath()
+    {
+        return $this->getDescription()->getData('path');
     }
 }

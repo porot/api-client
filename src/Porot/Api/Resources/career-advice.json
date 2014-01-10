@@ -1,0 +1,15 @@
+{
+    "name": "CareerAdvice",
+    "apiVersion": "2014-01-08",
+    "description": "Career advice service",
+    "path": "/career/advice",
+    "operations": {
+        "GetTopics": {
+            "httpMethod": "GET",
+            "uri": "topics",
+            "summary": "Returns a list of career advice topics",
+            "type" : "primitive",
+            "class": "Porot\\Api\\CareerAdvice\\Command"
+        }
+    }
+}

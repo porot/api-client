@@ -1,0 +1,11 @@
+{
+    "services": {
+        "default_settings": {
+            "base_url": "http://api.porot.com"
+        },
+        "career_advice": {
+            "extends": "default_settings",
+            "class": "Porot\\Api\\CareerAdvice\\Client"
+        }
+    }
+}

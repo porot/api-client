@@ -55,7 +55,7 @@ class Porot extends ServiceBuilder
      */
     public static function getDefaultServiceDefinition()
     {
-        return __DIR__  . '/Resources/porot-config.php';
+        return __DIR__  . '/Resources/services.json';
     }
 
     /**

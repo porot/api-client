@@ -1,10 +1,9 @@
 <?php
 
-namespace Porot\Ap\CareerAdvice;
+namespace Porot\Api\CareerAdvice;
 
 use Porot\Api\AbstractCommand;
 
 class Command extends AbstractCommand
 {
-
 }
