@@ -18,7 +18,7 @@ return array(
     'class' => 'Porot\Common\Porot',
     'services' => array(
         'default_settings' => array(
-            'base_url' => 'http://api.porot.com'
+            'base_url' => 'http://api.porot.org/app_dev.php'
         ),
 
         'career_advice' => array(

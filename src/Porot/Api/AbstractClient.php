@@ -1,6 +1,6 @@
 <?php
 
-namespace Porot\Common;
+namespace Porot\Api;
 
 use Guzzle\Common\Collection;
 use Guzzle\Service\Client;
