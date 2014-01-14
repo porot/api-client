@@ -9,7 +9,14 @@
             "uri": "topics",
             "summary": "Returns a list of career advice topics",
             "type" : "primitive",
-            "class": "Porot\\Api\\CareerAdvice\\Command"
+            "class": "Porot\\Api\\CareerAdvice\\CommandTopics"
+        },
+        "GetTopic": {
+            "httpMethod": "GET",
+            "uri": "topic/",
+            "summary": "Returns a career advice topic",
+            "type" : "primitive",
+            "class": "Porot\\Api\\CareerAdvice\\CommandTopic"
         }
     }
 }
