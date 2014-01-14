@@ -4,6 +4,6 @@ namespace Porot\Api\CareerAdvice;
 
 use Porot\Api\AbstractCommand;
 
-class Command extends AbstractCommand
+class CommandTopics extends AbstractCommand
 {
 }
