@@ -8,5 +8,5 @@ use Porot\Api\AbstractClient;
 
 class Client extends AbstractClient
 {
-	const SERVICE_DESCRIPTION = 'career-advice.json';
+    const SERVICE_DESCRIPTION = 'career-advice.json';
 }
