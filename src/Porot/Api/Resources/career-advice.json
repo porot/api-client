@@ -24,6 +24,13 @@
             "summary": "Returns a career advice question",
             "type" : "primitive",
             "class": "Porot\\Api\\CareerAdvice\\CommandQuestion"
+        },
+        "GetRandom": {
+            "httpMethod": "GET",
+            "uri": "random",
+            "summary": "Returns a random career advice question",
+            "type" : "primitive",
+            "class": "Porot\\Api\\CareerAdvice\\CommandRandom"
         }
     }
 }
