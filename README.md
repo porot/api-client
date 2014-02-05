@@ -9,7 +9,7 @@ Add the library to your project's `composer.json`
 ``` json
     "require": {
         ...,
-    	"porot/api-client:" "dev-master",
+    	"porot/api-client:" "~1.0",
     	...
     },
     ...
