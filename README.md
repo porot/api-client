@@ -11,10 +11,11 @@ The Porot API client library is best used with [composer](http://getcomposer.org
 Add the library to your project's `composer.json`
 
 ``` json
+{
 	"require": {
 		"porot/api-client": "~1.0",
 	},
-	...
+}
 ```
 
 Then run `php composer.phar install` or `php composer.phar update`.
