@@ -1,5 +1,9 @@
 # Porot API Client Library
 
+## Requirements
+
+To use this library you need to have access to the Porot API.
+
 ## Installation
 
 The Porot API client library is best used with [composer](http://getcomposer.org).
@@ -24,7 +28,7 @@ Alternatively, download or clone it from github.
 ### Career advice API client
 
 ``` php
-$porot = Porot::factory(array('token' => YOUR_POROT_API_TOKEN));
+$porot = Porot::factory(array('token' => 'YOUR_POROT_API_TOKEN'));
 
 $client = $porot->get('career_advice');
 ```
